@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="main-container">
+  <div class="container">
+    <div class="text">
+      <h1>
+        <strong> Hi, I'm <span style="color: #00e0c6">Roshita !</span> </strong>
+      </h1>
+      <h2 class="subtitle">Software Developer in People Tech Group</h2>
+      <h2>
+        I'm a passionate and detail-oriented Angular developer with over 3+
+        years of experience building scalable, high-performance web
+        applications. I specialize in crafting clean, responsive UI using
+        Angular, TypeScript, and Angular Material, and integrating RESTful APIs
+        to deliver seamless user experiences.
+      </h2>
+      <!-- <link class="resume-button" onclick="window.open('assets/roshita_battula_angular.pdf','_blank')">
+        <strong>Download Resume</strong> <i class="fa-solid fa-circle-down"></i>
+    </link> -->
+      <div class="btn" style="padding-top: 3%">
+        <a
+          href="../../assets/roshita_battula_angular.pdf"
+          download
+          class="download-btn"
+          ><strong>Download Resume</strong>
+          <i class="fa-solid fa-circle-down"></i
+        ></a>
+      </div>
+    </div>
+    <div class="profile-image-wrapper">
+      <img src="../../assets/rosi2.jpeg" class="profile-image" />
+    </div>
+  </div>
+  <div class="projects-section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="carousel-wrapper">
+      <div class="carousel" #carousel>
+        <div class="project-card" *ngFor="let project of projects">
+          <img [src]="project.image" class="title" />
+          <p class="cont">{{ project.description }}</p>
+          <a [href]="project.link" target="_blank"><strong>View Project</strong></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

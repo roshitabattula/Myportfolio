@@ -1,0 +1,34 @@
+.toolbar {
+    background-color: #0c0c0c;
+    color: white;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    // font-family: 'Pacifico';
+    color: #00e0c6;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-weight: 500;
+    margin: 0 10px;
+    font-size: 14px;
+    text-transform: none;
+  }
+  
+  .social-icons button {
+    color: white;
+  }
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 100px;
+}
+  
